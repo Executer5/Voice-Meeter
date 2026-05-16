@@ -2,9 +2,6 @@
 
 A modern enhancement layer for Roblox development workflows, providing UI improvements, editor integrations, and quality-of-life features for scripting environments.
 
-![GitHub Release](https://img.shields.io/github/v/release/USERNAME/Solara)
-![GitHub Downloads](https://img.shields.io/github/downloads/USERNAME/Solara/total)
-![GitHub License](https://img.shields.io/github/license/USERNAME/Solara)
 
 ---
 
