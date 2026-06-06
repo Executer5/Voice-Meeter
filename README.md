@@ -1,166 +1,160 @@
-# Solara
+# VoiceMeeter
 
-A modern enhancement layer for Roblox development workflows, providing UI improvements, editor integrations, and quality-of-life features for scripting environments.
-
-
----
+A professional virtual audio mixer designed for advanced audio routing, streaming, recording, and sound management on Windows systems.
 
 ## 🖼️ Preview
 
-### UI
-
-<img width="900" alt="preview" src="https://via.placeholder.com/900x500.png?text=Solara+Preview">
+UI preview
 
 ---
 
-# ⚠️ Disclaimer
+## ⚠️ Disclaimer
 
-This project is an unofficial, independent tool and is not affiliated with, endorsed by, or connected to Roblox Corporation or any related entity.
+VoiceMeeter is an independent audio mixing solution developed by VB-Audio.
 
-Use this project at your own risk. The developers are not responsible for misuse, account penalties, damages, or data loss caused by the use of this software.
+Users are responsible for configuring audio devices correctly. Improper setup may result in audio routing issues, microphone problems, or recording errors.
 
----
-
-# 🩹 Support
-
-For bug reports, feature requests, or help:
-
-- Open an issue on GitHub
-- Join the Discord server
-- Check the wiki/documentation
+Always download releases from trusted sources and ensure your audio drivers are up to date.
 
 ---
 
-# 🗺️ Overview
+## 🩹 Support
 
-Solara is designed to improve the scripting and development experience with:
+For assistance, troubleshooting, or feature requests:
 
-- Modern editor integration
-- Improved UI responsiveness
-- Enhanced customization
-- Script management utilities
-- Plugin/theme support
-- Lightweight performance-focused architecture
-
-The project focuses on maintaining a clean workflow while remaining highly configurable.
+* Open an issue on GitHub
+* Join the community Discord server
+* Visit the official documentation and guides
 
 ---
 
-# ✨ Features
+## 🗺️ Overview
 
-- ⚡ Fast startup
-- 🎨 Custom themes
-- 🧩 Modular architecture
-- 🪶 Lightweight UI
-- 🔧 Configurable settings
-- 📦 Portable support
-- 🖱️ Modern interface
-- 🌙 Dark mode support
+VoiceMeeter provides a powerful virtual mixing environment for Windows, allowing users to manage multiple audio inputs and outputs with ease.
+
+Key areas include:
+
+* Virtual audio routing
+* Microphone processing
+* Stream audio management
+* Multi-device output support
+* Recording and monitoring tools
+* Low-latency audio control
+
+Designed for streamers, content creators, gamers, and audio professionals.
 
 ---
 
-# 🚦 Status
+## ✨ Features
+
+⚡ Real-time audio routing
+
+🎙️ Virtual microphone support
+
+🔊 Multiple hardware outputs
+
+🎛️ Advanced audio mixer
+
+📦 Lightweight performance
+
+🎚️ Volume and EQ controls
+
+🎧 Audio monitoring
+
+🌙 Modern interface
+
+---
+
+## 🚦 Status
 
 Tested on:
 
-- ✅ Windows 10
-- ✅ Windows 11
+✅ Windows 10
+
+✅ Windows 11
 
 Supported architectures:
 
-- ✅ x64
-- ✅ x86
+✅ x64
+
+✅ x86
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## Installation
+### Installation
 
-1. Download the latest release from the Releases page
-2. Extract the archive
-3. Run `Solara.exe`
-4. Configure settings to your liking
+1. Download the latest release
+2. Run the installer
+3. Restart audio services if required
+4. Configure your input and output devices
 
----
+### Running
 
-## Running
+Launch:
 
-Simply launch:
-
-```powershell
-.\Solara.exe
+```bash
+VoiceMeeter.exe
 ```
 
 ---
 
-# ⚙️ Configuration
+## ⚙️ Configuration
 
-Configuration files are located in:
+Settings can be customized through the built-in control panel.
 
-```text
-C:\Users\<USER>\AppData\Roaming\Solara
-```
-
-Example settings:
+Example preferences:
 
 ```json
 {
-  "theme": "dark",
-  "animations": true,
-  "startup": false
+  "startup": true,
+  "auto_connect": true,
+  "monitoring": true
 }
 ```
 
 ---
 
-# 🎨 Themes
+## 🎛️ Audio Routing
 
-Supported themes:
+Supported functions:
 
-- Dark
-- Midnight
-- Catppuccin
-- Dracula
-
-Themes are stored in:
-
-```text
-Documents\Solara\themes
-```
+* Virtual Inputs
+* Hardware Inputs
+* Virtual Outputs
+* Hardware Outputs
+* Audio Monitoring
+* Streaming Integration
 
 ---
 
-# 🛠️ Build From Source
+## 🛠️ Build From Source
 
-## Requirements
+### Requirements
 
 Install:
 
-- Visual Studio 2022
-- MSVC v143 Build Tools
-- Windows SDK
-- CMake
+* Visual Studio 2022
+* Windows SDK
+* CMake
+* MSVC Build Tools
 
----
-
-## Clone Repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/Solara.git
-cd Solara
+git clone https://github.com/USERNAME/VoiceMeeter.git
+cd VoiceMeeter
 ```
 
----
-
-## Build
+### Build
 
 ```bash
 cmake -S . -B build
 cmake --build build --config Release
 ```
 
-Compiled binaries will appear in:
+Compiled files will appear in:
 
 ```text
 out/
@@ -168,60 +162,56 @@ out/
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
-Solara/
+VoiceMeeter/
 ├── src/
 ├── include/
 ├── assets/
-├── themes/
+├── configs/
 ├── build/
 └── README.md
 ```
 
 ---
 
-# 🤔 FAQ
+## 🤔 FAQ
 
-## Does this modify system files?
+### Does VoiceMeeter replace my audio drivers?
 
-No. Solara operates independently and does not replace Windows system components.
+No. It works alongside existing audio drivers and devices.
 
----
+### Can I use it for streaming?
 
-## Is this open source?
+Yes. VoiceMeeter is commonly used for streaming, recording, and virtual audio routing.
 
-Yes. Contributions and pull requests are welcome.
+### Does it support multiple outputs?
 
----
-
-## Can I create custom themes?
-
-Yes. Themes are fully customizable and easy to edit.
+Yes. Multiple physical and virtual outputs are supported.
 
 ---
 
-# 🔗 Dependencies
+## 🔗 Dependencies
 
-## Libraries Used
+### Libraries Used
 
-- spdlog
-- yaml-cpp
-- capstone
-- ImGui
-- DirectX SDK
+* PortAudio
+* ASIO SDK
+* ImGui
+* Windows Audio APIs
+* DirectX SDK
 
 ---
 
-# 📜 License
+## 📜 License
 
 Licensed under the MIT License.
 
-See `LICENSE` for more information.
+See LICENSE for more information.
 
 ---
 
-# ⭐ Credits
+## ⭐ Credits
 
-Special thanks to all contributors and testers who helped improve the project.
+Special thanks to all contributors, testers, and community members who helped improve the project.
